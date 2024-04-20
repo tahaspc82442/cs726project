@@ -1,0 +1,1 @@
+nohup torchrun --standalone --nproc_per_node=4 train.py --outdir=training-runs --name blood_mnist --data=datasets/bloodmnist.zip --cond=0 --arch=ncsnpp --pfgmpp=1 --batch 512 --aug_dim 128 &
